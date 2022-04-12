@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - main block
+ * main-main block
  * description: print _putchar in a new line
  * Return: this program returns zero
  */
@@ -15,6 +15,5 @@ _putchar('h');
 _putchar('a');
 _putchar('r');
 _putchar('\n');
-
 return (0);
 }
