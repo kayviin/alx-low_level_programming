@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * description: prints putchar in new line
+ *
  * Return: nothing, return void
  */
 
