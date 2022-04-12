@@ -6,22 +6,15 @@
  * Return: Always 0.
  */
 void print_alphabet_x10(void)
-{
-int alphabet;
-int count;
 
-
-count = 0;
-while (count < 10)
+int n, i;
+i = 0;
+while (i < 10)
 {
-for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
+for (n = 'a'; n <= 'z'; n++)
 {
-_putchar(alphabet);
+_putchar(n);
 }
-
-count++;
+i++;
 _putchar('\n');
-}
-
-
 }
