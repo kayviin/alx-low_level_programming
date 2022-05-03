@@ -1,24 +1,27 @@
 #include "main.h"
 
 /**
- * _strstr - returns pointer to first char of matching substring
- * @haystack: string to find substring in
- * @needle: substring to find match of
- * Return: pointer to first char of matching substring
+ *_strcat - concatinate 2 strings.
+ *@dest: first string.
+ *@src: second string.
+ *Return: string.
  */
 
-char *_strstr(char *haystack, char *needle)
+char *_strcat(char *dest, char *src)
 {
-	int k;
+	int i = 0, j = 0;
 
-	while (*haystack != '\0')
+	while (dest[i] != '\0')
+		i++;
+
+	while (src[j] != '\0')
 	{
-		k = 0;
-		while (*haystack == *needle && *haystack != '\0' && *needle != '\0')
-			haystack++, needle++, k++;
-		if (*needle == '\0')
-			return (haystack - k);
-		haystack -= (k - 1), needle -= k;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	return ('\0');
+
+	dest[i] = '\0';
+
+	return (dest);
 }
